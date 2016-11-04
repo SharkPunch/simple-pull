@@ -1,17 +1,14 @@
 Simple Pull
 ===========
 
-[![Build Status](http://img.shields.io/travis/Stouts/Stouts.pull.svg?style=flat-square)](https://travis-ci.org/Stouts/Stouts.pull)
-[![Galaxy](http://img.shields.io/badge/galaxy-Stouts.pull-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/908)
-
-Ansible role which do similar thing as [ansible-pull](http://docs.ansible.com/playbooks_intro.html#ansible-pull) but
-do it with simple `git clone` and `ansible-playbook` commands.
+A similar to [ansible-pull](http://docs.ansible.com/playbooks_intro.html#ansible-pull) Ansible role, implemented
+with `git clone` and `ansible-playbook` commands.
 
 Need for this was because `ansible-pull` doesn't support downloading playbook dependencies from Galaxy before running the playbook.
 This playbook might become unnecessary when `ansible-pull` support it.
 
-Originally based on [Stouts.pull](https://github.com/Stouts/Stouts.pull). The playbook started to look so much different that decided
-to split it to own playbook.
+Originally based on [Stouts.pull](https://github.com/Stouts/Stouts.pull), the playbook started to look so much different that I decided
+to split it to it's own playbook.
 
 The role allows you to setup easily automatic updates for your server with `simple-pull`.
 
