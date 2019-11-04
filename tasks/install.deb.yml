@@ -13,7 +13,7 @@
   when: pull_install_ansible and pull_install_deb
 
 - name: pull-install | Install ansible from PIP
-  pip: name=ansible state=latest
+  pip: name=ansible==2.8.6 state=forcereinstall
   when: pull_install_ansible and not pull_install_deb
 
 - name: pull-install | Install mailutils
